@@ -33,12 +33,7 @@ function getCurrentFunctionName() {
  *
  */
 function getFunctionBody(func) {
-  let result;
-  if (typeof func === 'function') {
-    result = func.toString();
-  } else {
-    result = '';
-  }
+  const result = typeof func === 'function' ? func.toString() : '';
   return result;
 }
 
